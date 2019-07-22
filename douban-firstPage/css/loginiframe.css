@@ -1,0 +1,234 @@
+@import "./reset.css";
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    margin: 0 auto;
+    /* background: transparent; */
+    background: #edf4ed;
+    position: relative;
+}
+
+/* 切换登陆方式 */
+.switch {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    padding-top: 20px;
+    margin: 0 auto;
+    /* display: none; */
+}
+
+.phone-account,
+.password-account {
+    display: inline-block;
+    width: 138px;
+    text-align: center;
+    cursor: pointer;
+    color: #9b9b9b;
+    font-size: 13px;
+}
+
+.click-login {
+    display: inline-block;
+    width: 138px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.switchHide {
+    display: none;
+}
+
+/* 短信登陆页面 */
+.phone,
+.password {
+    width: 280px;
+    margin: 0 auto;
+    color: #9b9b9b;
+    position: relative;
+}
+
+.phone-number,
+.verification {
+    width: 100%;
+    height: 30px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+.phone-number {
+    text-indent: 5em;
+}
+
+.verification {
+    text-indent: 1em;
+}
+
+.container a {
+    color: #41ac52;
+}
+
+.login-btn {
+    width: 100%;
+    height: 30px;
+    font-weight: 400;
+    background-color: rgba(66, 189, 86, .5);
+    font-size: 15px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.no-verification {
+    display: inline-block;
+    float: right;
+}
+
+.other-way {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.other-icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    line-height: 45px;
+}
+
+.weibo,
+.weixin {
+    height: 22px;
+    width: 22px;
+    margin-left: 12px;
+    display: inline-block;
+}
+
+.weibo {
+    background: url(../img/weibo.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.weixin {
+    background: url(../img/weixin.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 区号 */
+.areaCode {
+    font-size: 15px;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+}
+
+/* 获取验证码 */
+.getVerification {
+    color: #41ac52;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 78px;
+    cursor: pointer;
+}
+
+/* 密码登陆页面 */
+.forgotPassword,
+.overseasLogin {
+    float: right;
+}
+
+.accountName,
+.accountPassword {
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+
+/* 二维码登陆 */
+.QR-code {
+    display: none;
+}
+
+.QR-code h3 {
+    height: 50px;
+    line-height: 70px;
+    border-bottom: 1px solid #ececec;
+}
+
+.toggleQR {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(../img/scan.png) no-repeat;
+    background-size: 100% 100%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.toggleQR:hover {
+    opacity: .8;
+}
+
+.toggleQR:hover:before {
+    display: block;
+}
+
+.QR-img {
+    width: 170px;
+    height: 170px;
+    background: url(../img/doubanCode.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.QR-text {
+    width: 140px;
+    padding: 3px 20px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin: 204px auto 0;
+}
+
+.myText {
+    max-width: 100px;
+    height: 30px;
+    border: 1px solid rgba(66, 189, 16, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #9b9b9b;
+    font-size: 14px;
+    border-radius: 2px;
+    display: none;
+}

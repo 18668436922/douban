@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆/注册</title>
+    <link rel="stylesheet" href="./css/loginiframe.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 短信登陆/注册 -->
+        <div class="switch">
+            <span class="phone-account click-login">短信登陆／注册</span>
+            <span class="password-account">密码登陆</span>
+            <!-- 短信登陆页面 -->
+            <div class="phone">
+                <span>登陆注册表示同意 <a href="#">豆瓣使用协议、隐私政策</a></span>
+                <input class="phone-number" type="phone" placeholder="手机号">
+                <input class="verification" type="text" placeholder="验证码">
+                <input class="login-btn" type="submit" value="登陆豆瓣">
+                <input type="checkbox">
+                <span style="color: #000; font-size: 13px;">下次自动登录</span>
+                <span class="areaCode">+86</span>
+                <span class="getVerification">获取验证码</span>
+                <a href="#" class="no-verification">收不到验证码</a>
+                <div class="other-way">
+                    <span>第三方登录：</span>
+                    <div class="other-icon">
+                        <a href="#" class="weixin"></a>
+                        <a href="#" class="weibo"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- 密码登陆页面 -->
+            <div class="password" style="display: none;">
+                <a href="#" class="forgotPassword">找回密码</a>
+                <input class="accountName" type="text" placeholder="手机号/邮箱">
+                <input class="accountPassword" type="password" placeholder="请输入密码">
+                <input class="login-btn" type="submit" value="登陆豆瓣">
+                <input type="checkbox">
+                <span style="color: #000; font-size: 13px;">下次自动登录</span>
+                <a href="#" class="overseasLogin">海外手机登陆</a>
+                <div class="other-way">
+                    <span>第三方登录：</span>
+                    <div class="other-icon">
+                        <a href="#" class="weixin"></a>
+                        <a href="#" class="weibo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 扫码登陆 -->
+        <div class="QR-code">
+            <h3>二维码登陆</h3>
+            <div class="QR-img">
+            </div>
+            <div class="QR-text">请打开豆瓣客户端扫一扫</div>
+        </div>
+        <div class="toggleQR">
+        </div>
+        <div class="myText">扫码登录</div>
+    </div>
+    <script src="./js/loginiframe.js"></script>
+</body>
+
+</html>
